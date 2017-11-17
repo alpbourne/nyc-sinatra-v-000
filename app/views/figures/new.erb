@@ -5,7 +5,7 @@
   <input type="text" id="figure_name" name="figure[name]"><br>
 
   <label>Titles</label>
-  <%@titles.all.each do |title|%>
+  <%Title.all.each do |title|%>
     <label><%=title.name%></label>
     <input type="checkbox" id="title_<%=title.id%>" name="figure[title_ids][]" value="<%=title.id%>"><br>
   <% end %>
