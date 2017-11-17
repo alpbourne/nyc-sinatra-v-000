@@ -1,7 +1,7 @@
 class FiguresController < ApplicationController
 
   get '/figures' do
-    @figures = figure.all
+    @figures = Figure.all
     erb :'/figures/index'
   end
 
